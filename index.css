@@ -1,0 +1,13 @@
+h2 {
+    color: black;
+  }
+  
+  p {
+    color: blue;
+  }
+  
+  span {
+    color: blue;
+    background-color: yellow;
+    font-weight: bold;
+  }

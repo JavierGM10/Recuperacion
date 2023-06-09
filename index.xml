@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="index.css"?>
+	<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+		<cancion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd">
+			<titulo>Matadora</titulo>
+				<letra>
+					<estrofa>
+						<contador>Estrofa </contador>
+						<verso>Baby, no pregunte' más</verso>
+						<verso>Mírame</verso>
+						<verso>'Toy igual</verso>
+						<verso>Que cuando casi dejo de cantar</verso>
+						<verso>Déjame</verso>
+						<verso>Deja ya</verso>
+					</estrofa>
+					<estrofa>
+						<contador>Estrofa </contador>
+						<verso>De contar que ya me has perdido</verso>
+						<verso>De contar que soy un subido</verso>
+						<verso>La cagamos y repetimo'</verso>
+						<verso>Tú sabes muy bien lo que digo</verso>
+						<verso>Así que deja de joder conmigo</verso>
+						<verso>Porque ya nada de esto va contigo</verso>
+					</estrofa>
+						<estrofa>
+						<contador>Estrofa </contador>
+						<verso>Baby, tú eres matadora, y me controla'</verso>
+						<verso>Mi cabeza se arrincona pa' pensar</verso>
+						<verso>En que siempre que te abro el cora', me lo robas</verso>
+						<verso>Yo ya no estoy pa' broma', déjalo estar</verso>
+					</estrofa>
+			</letra>
+					<autor>Walls</autor>
+						<tipo>Estilo: Rap</tipo>
+		</cancion>

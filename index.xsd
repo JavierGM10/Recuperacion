@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd">
+
+  <xsd:element name="cancion">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="titulo" type="xsd:string"/>
+        <xsd:element name="letra">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="estrofa" maxOccurs="unbounded">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="contador" type="xsd:string"/>
+                    <xsd:element name="verso" type="xsd:string" maxOccurs="unbounded"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="autor" type="xsd:string"/>
+        <xsd:element name="tipo" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+</xsd:schema>
