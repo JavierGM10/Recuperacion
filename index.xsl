@@ -8,9 +8,9 @@
         <title>Matadora</title>
       </head>
       <body>
-        <h1><xsl:value-of select="cancion/titulo"/></h1>
+        <h2><xsl:value-of select="cancion/titulo"/></h2>
         <xsl:variable name="totalEstrofas">
-          <xsl:value-of select="count(cancion/letra/estrofa)"/>
+         <span><xsl:value-of select="count(cancion/letra/estrofa)"/></span>
         </xsl:variable>
         <xsl:apply-templates select="cancion/letra/estrofa"/>
         <div class="cantidad">
@@ -26,7 +26,7 @@
     <div class="estrofa">
       <div class="contador">Estrofa <xsl:number level="single"/></div>
       <xsl:variable name="numVersos">
-        <xsl:value-of select="count(verso)"/>
+        <p><xsl:value-of select="count(verso)"/></p>
       </xsl:variable>
       <xsl:apply-templates select="verso"/>
       <div class="contador">Total versos: <xsl:value-of select="$numVersos"/></div>
