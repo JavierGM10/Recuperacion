@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:output method="html" encoding="UTF-8"/>
-
+   <?xml-stylesheet type="text/css" href="index.css"?>
   <xsl:template match="/">
     <html>
       <head>
@@ -23,17 +23,17 @@
   </xsl:template>
   
   <xsl:template match="estrofa">
-    <div class="estrofa">
+    <span class="estrofa">
       <div class="contador">Estrofa <xsl:number level="single"/></div>
       <xsl:variable name="numVersos">
         <p><xsl:value-of select="count(verso)"/></p>
       </xsl:variable>
       <xsl:apply-templates select="verso"/>
       <div class="contador">Total versos: <xsl:value-of select="$numVersos"/></div>
-    </div>
+    </span>
   </xsl:template>
   
   <xsl:template match="verso">
-    <div class="verso"><xsl:number format="1."/> <xsl:value-of select="."/></div>
+    <p class="verso"><xsl:number format="1."/> <xsl:value-of select="."/></p>
   </xsl:template>
 </xsl:stylesheet>
